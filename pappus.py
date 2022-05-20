@@ -11,7 +11,7 @@ from itertools import permutations
 fig, (ax, ax_btm) = plt.subplots(2, 1, gridspec_kw={'height_ratios': [10, 1]})
 ax.set_aspect('equal')
 
-NAME = 'pappus-'
+NAME = 'pappus'
 NAME += input(f'\nsession name: {NAME}')
 
 pappus_lines = []
