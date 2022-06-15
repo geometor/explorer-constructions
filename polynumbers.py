@@ -3,11 +3,8 @@ from geometor.model import *
 from geometor.render import *
 
 sp.init_printing()
-from geometor.pappus import *
 from itertools import permutations
 
-#  fig, (ax0, ax1) = plt.subplots(ncols=2, figsize=(7, 4))
-#  fig, ax = plt.subplots(2, 1)
 fig, (ax, ax_btm) = plt.subplots(2, 1, gridspec_kw={'height_ratios': [10, 1]})
 ax.set_aspect('equal')
 
@@ -18,15 +15,14 @@ from sympy import symbols, Function, Indexed, Rational, Expr, Poly, Integer
 from sympy import Sum, factorial, binomial, oo, IndexedBase, chebyshevt, chebyshevu
 # import sympy.functions as sym
 from sympy import init_printing
-init_printing(use_latex=True)
 from sympy import pprint
-from sympy import Symbol
+#  from sympy import Symbol
 from IPython.display import display
-import math
-x = Symbol('x')
+#  import math
+#  x = Symbol('x')
 
 def Spread(n):
-    s = Symbol('s')
+    s = sp.Symbol('s')
     n = Integer(n)
     p = Integer(0)
     for k in range(1, n+1):
